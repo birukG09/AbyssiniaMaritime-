@@ -62,9 +62,28 @@ Add a GUI interface for easier interaction.
 
 Implement advanced cargo and shipment analytics.
 
-📧 Contact
-Author: Biruk Gebre
+# Abyssinia Maritime – Console Logistics & Port Management System
 
-Email: birukgebre277@gmail.com
+Abyssinia Maritime is a **console-based application** designed to manage shipping, cargo, and port operations efficiently. It provides essential tools for tracking and organizing maritime logistics.
 
-GitHub: birukG09
+## 🛠️ Key Uses
+- **Cargo Management:** Add, update, and track shipments in real time.  
+- **Port Operations:** Manage port activities, routes, and dock schedules.  
+- **Route Handling:** Plan and optimize shipping routes for timely delivery.  
+- **Reporting:** View shipment status and generate simple logistics reports.  
+- **Training & Learning:** Ideal for software engineering students to learn Java and Rust for practical logistics applications.
+
+## 💻 Technology
+- **Java:** Main application logic for console-based operations.  
+- **Rust:** Route management and advanced logistics computation (optional module).  
+
+## 🚀 Who Can Use It
+- Shipping companies or logistics planners (as a learning or prototype tool).  
+- Students and developers learning **Java, Rust, and console-based applications**.  
+- Anyone interested in understanding maritime cargo and port management processes.
+
+## 📧 Contact
+- **Author:** Biruk Gebre  
+- **Email:** birukgebre277@gmail.com  
+- **GitHub:** [birukG09](https://github.com/birukG09)
+
