@@ -1,59 +1,70 @@
-# AbyssiniaMaritime (Console Edition)
+# Abyssinia Maritime – Console Logistics & Port Management System
 
-Console-first maritime logistics and port ops demo:
-- **Java CLI** (main orchestrator)
-- **Rust route optimizer** (distance/ETA in nautical miles)
-- **Python cost engine** (fuel + fees + distance costs)
-- **Node formatter** (optional pretty output)
+A Java-based console application to manage cargo, shipping routes, and port logistics efficiently. Designed as a learning and demonstration project for software engineering students.
 
-## Quickstart
+## 🛠️ Features
+- Manage shipping routes and cargo records.
+- Add, update, and delete cargo and port information.
+- View detailed reports of shipments and logistics status.
+- Simple and interactive console interface.
 
-### 1) Build the Rust route optimizer
+## 💻 Tech Stack
+- **Language:** Java  
+- **Build Tool:** None (plain Java console application)  
+- **File Structure:**  
+  - `src/rust/route/src/main.rs` – Main application entry  
+  - `Cargo.toml` – Project configuration (for Rust module)
+
+*(Note: This project also contains Rust components for route handling.)*
+
+## 📂 Project Structure
+AbyssiniaMaritime/
+├── src/
+│ └── rust/
+│ └── route/
+│ ├── src/
+│ │ └── main.rs
+│ └── Cargo.toml
+├── README.md
+
+bash
+Copy
+Edit
+
+## 🚀 Getting Started
+1. **Clone the repository**
 ```bash
-cd src/rust/route
-cargo build --release
-mkdir -p ../../../bin
-cp target/release/route_optimizer ../../../bin/route_optimizer
-```
+git clone https://github.com/birukG09/AbyssiniaMaritime-.git
+Navigate to the Rust route module
 
-### 2) Compile the Java CLI
-```bash
-cd ../../../
-mkdir -p build/java
-javac -d build/java src/java/com/abyssinia/App.java
-jar --create --file build/AbyssiniaMaritime.jar -C build/java .
-```
+bash
+Copy
+Edit
+cd AbyssiniaMaritime/src/rust/route
+Build and run (Rust module)
 
-### 3) (Optional) Ensure Python and Node are available
-- Python: `python3 --version` (no extra packages required)
-- Node: `node --version`
+bash
+Copy
+Edit
+cargo run
+Run the Java application
 
-### 4) Run demo end-to-end
-```bash
-ROUTE_BIN=bin/route_optimizer java -cp build/AbyssiniaMaritime.jar com.abyssinia.App
-# choose option 3: Demo Full Flow
-```
+Open your Java IDE or terminal.
 
-## Windows notes
-- After `cargo build --release`, copy `target\release\route_optimizer.exe` to `bin\route_optimizer.exe`
-- Run Java with:
-```bat
-set ROUTE_BIN=bin\route_optimizer.exe
-java -cp build\AbyssiniaMaritime.jar com.abyssinia.App
-```
+Compile main.java (or equivalent entry file).
 
-## Project layout
-```text
-src/
-  java/com/abyssinia/App.java
-  rust/route/Cargo.toml
-  rust/route/src/main.rs
-  python/cost_engine.py
-  node/formatter.js
-bin/ (created after building Rust)
-build/ (created after compiling Java)
-```
+Run the compiled program.
 
-## Notes
-- JSON I/O connects all components. Java calls Rust/Python/Node via subprocess.
-- The math model is simplified for a console demo (haversine + basic fuel estimate).
+📌 Future Improvements
+Integrate a database for persistent storage.
+
+Add a GUI interface for easier interaction.
+
+Implement advanced cargo and shipment analytics.
+
+📧 Contact
+Author: Biruk Gebre
+
+Email: birukgebre277@gmail.com
+
+GitHub: birukG09
