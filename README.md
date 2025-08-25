@@ -1,5 +1,5 @@
 # Abyssinia Maritime – Console Logistics & Port Management System
-
+![img alt](https://github.com/birukG09/AbyssiniaMaritime-/blob/da345f6977a68419e21d7ada6a7fbca7a22bd1e4/20250826_0013_Cargo%20Ship%20at%20Sea_remix_01k3hh4d83e7gt1q2q73fbrs10%20(1).png)
 A Java-based console application to manage cargo, shipping routes, and port logistics efficiently. Designed as a learning and demonstration project for software engineering students.
 
 ## 🛠️ Features
